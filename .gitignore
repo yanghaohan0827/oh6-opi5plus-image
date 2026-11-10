@@ -1,0 +1,4 @@
+dist-assets/
+update.img
+*.log
+.tools/
