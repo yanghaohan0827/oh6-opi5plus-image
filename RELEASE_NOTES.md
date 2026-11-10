@@ -21,3 +21,13 @@ OpenHarmony 6.0-Release（RK3588 / Orange Pi 5 Plus）基础镜像 + 2026-11-07 
 - 已验证：1080×1920 竖屏、鼠标方向与范围、`CONFIG_PID_NS=y`、命名空间子进程 PID=1、ArkWeb 本地/HTTP/HTTPS 页面、重启后补丁仍生效。
 - 未验证：整镜像重打包、换内核后的 Wi-Fi 单独联网复测、触摸、其他载板。
 - 完整步骤见 README 与 `docs/`。
+
+## English
+
+OpenHarmony 6.0-Release base image for RK3588 / Orange Pi 5 Plus, plus the portrait-orientation and ArkWeb (CONFIG_PID_NS) patches verified on hardware on 2026-11-07.
+
+- The image itself was built on 2026-11-06 and does **not** contain the two patches; apply them after flashing.
+- Join the two image parts and verify SHA-256 `8994286e12c2b8a05aafd9479026fffafc34112ff47ddc199fe0cf5725f38d34` (3,552,299,594 bytes).
+- Verified: 1080×1920 portrait, mouse range, `CONFIG_PID_NS=y`, namespace child PID=1, ArkWeb local/HTTP/HTTPS pages, patches survive reboot.
+- Not verified: full-image repack, separate Wi-Fi retest after the kernel swap, touch input, other boards.
+- See [README.en.md](README.en.md) and `docs/` for details.
